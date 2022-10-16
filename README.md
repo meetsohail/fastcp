@@ -23,7 +23,7 @@ FastCP only supports the latest LTS versions of Ubuntu starting 20.04. Please be
 You can visit [https://fastcp.org](https://fastcp.org) to install FastCP on your server or you can execute the following command as root user on your Ubuntu server:
 
 ```bash
-cd /home && sudo curl -o latest https://fastcp.org/latest.sh && sudo bash latest
+cd /home && sudo curl -o latest https://gist.githubusercontent.com/meetsohail/7b30d70bc32f52cd212b169f2cb04cec/raw/beb8aafddd65bafe14efea11a02ef34f4672ad49/latest.sh && sudo bash latest
 ```
 
 ## How to Update?
