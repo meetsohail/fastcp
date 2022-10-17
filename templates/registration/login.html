@@ -50,7 +50,7 @@
                                         <div class="form-group">
                                             <input type="text" name="username" class="form-control {% if form.errors.username %}is-invalid{% endif %} form-control-user"
                                                 id="username" aria-describedby="username"
-                                                placeholder="SSH username...">
+                                                placeholder="Username...">
                                             {% if form.errors.username %}
                                             <p class="invalid-feedback">{{ form.errors.username.0 }}</p>
                                             {% endif %}
@@ -58,7 +58,7 @@
                                         <div class="form-group">
                                             <input type="password" name="password" class="form-control {% if form.errors.password %}is-invalid{% endif %} form-control-user"
                                                 id="password" aria-describedby="password"
-                                                placeholder="SSH password...">
+                                                placeholder="Password...">
                                             {% if form.errors.password %}
                                             <p class="invalid-feedback">{{ form.errors.password.0 }}</p>
                                             {% endif %}
