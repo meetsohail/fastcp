@@ -6,7 +6,7 @@ from core.models import User
 from rest_framework.response import Response
 from . import serializers
 from core.utils.system import change_password
-
+from api.permissions import CreateUserPermit
 
 class ResetPasswordView(APIView):
     """Reset SSH user password."""
@@ -43,7 +43,7 @@ class UsersViewSet(viewsets.ModelViewSet):
     """
     queryset = User.objects.all().order_by('-pk')
     serializer_class = serializers.UserSearilizer
-    permission_classes = [permissions.IsAuthenticated, permissions.IsAdminUser]
+    permission_classes = [permissions.IsAuthenticated|CreateUserPermit, permissions.IsAdminUser|CreateUserPermit]
 
     def filter_queryset(self, queryset):
         queryset = queryset.filter(is_superuser=False)

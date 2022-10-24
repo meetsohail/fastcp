@@ -186,8 +186,8 @@ STATICFILES_STORAGE = 'core.storage.WhiteNoiseStaticFilesStorage'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # FastCP's added settings
-FASTCP_SITE_NAME = 'FastCP'
-FASTCP_SITE_URL = 'https://fastcp.org'
+FASTCP_SITE_NAME = 'WpHost'
+FASTCP_SITE_URL = 'https://wphost.live'
 LOGIN_URL = 'core:login'
 LOGIN_REDIRECT_URL = 'spa'
 FILE_MANAGER_ROOT = os.environ.get('FILE_MANAGER_ROOT', '/srv/users')
